@@ -10,10 +10,9 @@ import Details from "./pages/Details";
 import UTCTime from "./components/UTCTime";
 import Table from "./components/Table";
 import Dummy from "./components/Dummy";
-import "./App.css";
+import FlightInfo from "./components/FlightInfo";  // Changed to PascalCase
 import WeatherInfo from './components/Cards/WeatherInfo';
 import "./WeatherInfo.css";
-
 
 function App() {
   return (
@@ -30,6 +29,7 @@ function App() {
         <Route path="/details" element={<Details />} />
         <Route path="/table" element={<Table />} />
         <Route path="/dummy" element={<Dummy />} />
+        <Route path="/flight_info" element={<FlightInfo />} /> {/* Changed to PascalCase */}
 
         {/* <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />

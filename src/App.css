@@ -801,3 +801,154 @@ table.comparison-table td:first-child {
     text-decoration: underline;
   }
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/************** this code is for text *************/
+
+h1 {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h3,
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/************** this code is for table *************/
+
+table {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  background-color: #2D333B;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px #474350;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+thead {
+  background-color: #2D333B;
+  color: #ffffff;
+}
+
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+  color: #ffffff;
+}
+
+.dark-mode tbody tr:nth-child(odd) {
+  color: #ADBAC7;
+}
+
+
+.dark-mode tbody tr:nth-child(even){
+  color: #22272E;
+}
+
+.dark-mode table {
+  background-color: #22272E;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px #ADBAC7;
+}
+
+.dark-mode thead {
+  background-color: #2D333B;
+  color: #ADBAC7;
+}
+
+/************** this code is searchbar *************/
+
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border: black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.search-form button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #2D333B;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.dark-mode .search-form input[type="text"] {
+  border: 1px solid rgb(255, 255, 255); 
+  background-color: #2D333B;
+  color: white;
+}
+
+.dark-mode .search-form button{
+  border: 1px solid white
+}
+
+
+@media only screen and (min-width: 600px) {
+  .search-form input[type="text"] {
+    width: 200px;
+  }
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 400px) {
+ 
+  .search-form input[type="text"] {
+    width: 150px;
+  }
+}

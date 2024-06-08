@@ -36,10 +36,12 @@ const Details = () => {
             <th>Actual</th>
           </tr>
         </thead>
+
         <tbody>
           {airportData.map((flight, index) => (
             <tr key={index}>
-              <td>{flight.gate}</td>
+
+              <td> "flight.gate"</td>
               <td>{flight.flight_number}</td>
               <td>{flight.scheduled}</td>
               <td>{flight.actual}</td>
